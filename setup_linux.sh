@@ -17,14 +17,18 @@ sudo apt-get -y install \
     vim 
 
 # clone the rest of the repo
-git clone https://ditchfieldcaleb.com/setup_linux
+git clone https://github.com/ditchfieldcaleb/setup_linux
 
 # install and switch to zsh
+rm -rf ~/.oh-my-zsh
+rm -f ~/.zshrc
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp setup_linux/dotfiles/.zshrc ~/.zshrc
 chsh -s /bin/zsh
 
 # setup vundle, vim, and vim plugins
+rm -rf ~/.vim
+rm -f ~/.vimrc
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp setup_linux/dotfiles/.vimrc ~/.vimrc
 vim +PluginInstall +qall
