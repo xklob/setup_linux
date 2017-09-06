@@ -14,7 +14,7 @@ sudo apt-get -y install \
     git \
     google-chrome-stable \
     guake \
-    vim 
+    vim
 
 # clone the rest of the repo
 git clone https://github.com/ditchfieldcaleb/setup_linux
@@ -33,4 +33,6 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp setup_linux/dotfiles/.vimrc ~/.vimrc
 vim +PluginInstall +qall
 
-
+# set vim as main editor
+export VISUAL=vim
+export EDITOR="$VISUAL"

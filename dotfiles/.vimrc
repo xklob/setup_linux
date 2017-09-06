@@ -1,5 +1,3 @@
-" Begin Vundle config
-
 set nocompatible
 filetype off
 
@@ -8,10 +6,10 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'ntpeters/vim-bettter-whitespace'
+Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'vim-airline/vim-airline'
 Plugin 'Raimondi/delimitMate'
-Plugin 'zanglg/nova'
+Plugin 'zanglg/nova.vim'
 Plugin 'kien/rainbow_parentheses.vim'
 
 call vundle#end()            " required
