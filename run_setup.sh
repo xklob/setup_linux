@@ -40,7 +40,7 @@ export EDITOR="$VISUAL"
 # git config stuff
 git config --global user.email "ditchfieldcaleb@gmail.com"
 git config --global user.name "Caleb Ditchfield"
-git config --global core.edit "vim"
+git config --global core.editor "vim"
 
 # vim plugininstall last
-vim +PluginINstall +qall
+vim +PluginInstall +qall
