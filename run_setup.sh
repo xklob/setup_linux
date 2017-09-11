@@ -32,7 +32,6 @@ rm -rf ~/.vim
 rm -f ~/.vimrc
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp setup_linux/dotfiles/.vimrc ~/.vimrc
-vim +PluginInstall +qall
 
 # set vim as main editor
 export VISUAL=vim
@@ -42,3 +41,6 @@ export EDITOR="$VISUAL"
 git config --global user.email "ditchfieldcaleb@gmail.com"
 git config --global user.name "Caleb Ditchfield"
 git config --global core.edit "vim"
+
+# vim plugininstall last
+vim +PluginINstall +qall
