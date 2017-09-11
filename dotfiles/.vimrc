@@ -29,10 +29,16 @@ set pastetoggle=<F6>  "F6 to enable paste mode
 set noerrorbells      "Disables annoying alarm bells
 set ls=2              "Always show status line
 set showmatch         "Highlight brackets, parens, etc
-set relativenumber    "Enables relative line numbering 
+set relativenumber    "Enables relative line numbering
 set number            "Enables line numbering
 
-" auto-delete whitespace on write
+" Wrapper function for deleting whitespace while saving cursor position
+function! Delete_whitespace()
+    let save_pos = getpos(".")
+    :StripWhitespace
+    call setpos(".", save_pos)
+endfunction
+
 autocmd BufWritePre * call Delete_whitespace()
 
 " Toggle line numbers with F4

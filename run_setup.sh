@@ -9,12 +9,13 @@ sudo apt-get -y --force-yes update
 sudo apt-get -y --force-yes upgrade
 
 # install apps
-sudo apt-get -y install \
+sudo apt-get -y install --allow-unauthenticated \
     spotify-client \
     git \
     google-chrome-stable \
     guake \
-    vim
+    vim \
+		zsh
 
 # clone the rest of the repo
 git clone https://github.com/ditchfieldcaleb/setup_linux
@@ -36,3 +37,8 @@ vim +PluginInstall +qall
 # set vim as main editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+# git config stuff
+git config --global user.email "ditchfieldcaleb@gmail.com"
+git config --global user.name "Caleb Ditchfield"
+git config --global core.edit "vim"
