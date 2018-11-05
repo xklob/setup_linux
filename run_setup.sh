@@ -12,7 +12,7 @@ sudo apt-get -y --force-yes upgrade
 sudo apt-get -y install --allow-unauthenticated \
     git \
     vim \
-		zsh
+    zsh
 
 # clone the rest of the repo
 git clone https://github.com/ditchfieldcaleb/setup_linux
