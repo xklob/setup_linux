@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# add repos
-sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free"
-sudo add-apt-repository -y "deb http://dl.google.com/linux/chrome/deb/ stable main"
-
 # basic update
 sudo apt-get -y --force-yes update
 sudo apt-get -y --force-yes upgrade
