@@ -10,10 +10,7 @@ sudo apt-get -y --force-yes upgrade
 
 # install apps
 sudo apt-get -y install --allow-unauthenticated \
-    spotify-client \
     git \
-    google-chrome-stable \
-    guake \
     vim \
 		zsh
 
